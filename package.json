@@ -1,0 +1,43 @@
+{
+  "name": "visual-regression-testing",
+  "version": "1.0.0",
+  "description": "Visual Regression Testing with Playwright and Docker",
+  "keywords": [
+    "docker",
+    "playwright",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adequatica/visual-regression-testing"
+  },
+  "author": "Andrey Enin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@playwright/test": "1.51.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.24.0",
+    "@stylistic/eslint-plugin-ts": "4.2.0",
+    "@types/node": "22.14.0",
+    "@typescript-eslint/parser": "8.29.1",
+    "eslint": "9.24.0",
+    "eslint-config-prettier": "10.1.1",
+    "eslint-plugin-prettier": "5.2.6",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "prettier": "3.5.3",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.29.1"
+  },
+  "scripts": {
+    "format": "npx prettier --write .",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "test:install-deps": "playwright install chromium && playwright install-deps chromium",
+    "test:screenshots": "./playwright-screenshot.sh test --config playwright.screenshot.config.ts",
+    "test:local": "playwright test --config playwright.screenshot.config.ts"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "include": ["playwright.screenshot.config.ts", "esling.config.mjs", "tests"],
+  "compilerOptions": {
+    "target": "es2023",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  }
+}
