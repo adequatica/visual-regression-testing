@@ -2,7 +2,7 @@
 
 [![Run Playwright Screenshot Tests](https://github.com/adequatica/visual-regression-testing/actions/workflows/run-playwright-screenshot-tests.yaml/badge.svg?branch=main)](https://github.com/adequatica/visual-regression-testing/actions/workflows/run-playwright-screenshot-tests.yaml)
 
-This repository illustrates the article [Operating System Independent Screenshot Testing with Playwright and Docker](https://adequatica.medium.com/operating-system-independent-screenshot-testing-with-playwright-and-docker-6e2251a9eb32). Actually, Docker is not mandatory for visual regression testing, but the reasons why (and how) it is used here are explained in the article.
+This repository illustrates the article [Operating System Independent Screenshot Testing with Playwright and Docker](https://adequatica.github.io/2025/04/10/operating-system-independent-screenshot-testing-with-playwright-and-docker.html). Actually, Docker is not mandatory for visual regression testing, but the reasons why (and how) it is used here are explained in the article.
 
 ## Stack
 
