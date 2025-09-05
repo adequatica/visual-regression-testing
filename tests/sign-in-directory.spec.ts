@@ -1,9 +1,9 @@
 import { expect, test } from '@playwright/test';
 
-test('Auth-directory', async ({ page }) => {
+test('Sign-in-directory', async ({ page }) => {
   await page.goto('/');
 
-  const selector = page.locator('#cern-toolbar ul');
+  const selector = page.getByText('Sign in Directory');
   await selector.waitFor({ state: 'visible' });
 
   const screenshot = await selector.screenshot();

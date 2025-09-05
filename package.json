@@ -38,6 +38,7 @@
     "lint:fix": "eslint --fix",
     "test:install-deps": "playwright install chromium && playwright install-deps chromium",
     "test:screenshots": "./playwright-screenshot.sh test --config playwright.screenshot.config.ts",
-    "test:local": "playwright test --config playwright.screenshot.config.ts"
+    "test:local": "playwright test --config playwright.screenshot.config.ts",
+    "test:local-debug": "playwright test --debug --workers=1 --config playwright.screenshot.config.ts"
   }
 }
