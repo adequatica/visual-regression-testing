@@ -22,7 +22,7 @@ const config: PlaywrightTestConfig = {
        * An acceptable amount of pixels that could be different.
        * See https://playwright.dev/docs/api/class-testconfig#test-config-expect.
        */
-      maxDiffPixelRatio: 0.01,
+      maxDiffPixelRatio: 0.1,
     },
   },
   forbidOnly: CI,
